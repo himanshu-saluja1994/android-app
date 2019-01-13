@@ -1,18 +1,18 @@
 package com.example.himanshusaluja.github
 
 import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.widget.Button
 import com.example.himanshusaluja.github.databinding.ActivityMainBinding
-import com.example.himanshusaluja.github.databinding.ItemPrBinding
 import android.arch.paging.PagedList
-import android.support.annotation.Nullable
 import com.example.himanshusaluja.github.model.PRItem
+import com.example.himanshusaluja.github.network.Repository
+import com.example.himanshusaluja.github.pagination.PaginatedAdapter
+import com.example.himanshusaluja.github.vm.PRListViewModel
+import com.example.himanshusaluja.github.vm.PRListViewModelFactory
 
 
 class MainActivity : AppCompatActivity(), IPrVm {

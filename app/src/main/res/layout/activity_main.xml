@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.example.himanshusaluja.github.PRListViewModel" />
+            type="com.example.himanshusaluja.github.vm.PRListViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
